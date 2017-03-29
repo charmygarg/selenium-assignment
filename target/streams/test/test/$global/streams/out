@@ -1,8 +1,9 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(CreateCustomTest, org.scalatest.tools.Framework$$anon$1@d28f962, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 20 seconds, 562 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 2[0m[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(CreateCustomTest, org.scalatest.tools.Framework$$anon$1@5cdba6ed, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 31 seconds, 868 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 7[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
-[0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	CreateCustomTest[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 4, failed 3, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 3 TESTS FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	CreateCustomTest[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

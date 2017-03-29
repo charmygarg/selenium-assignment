@@ -1,5 +1,5 @@
 import java.util.concurrent.TimeUnit
-import org.openqa.selenium.By
+import org.openqa.selenium.{WebElement, By}
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.scalatest.FlatSpec
@@ -34,13 +34,45 @@ class CreateCustomTest extends FlatSpec with TestSetUp {
     driver.findElementByCssSelector("button.login-login-button").click()
   }
 
-//
-//  "user" should "select a category from the list" in{
-//
-//    driver.manage().window().maximize()
-//    driver.get(BASE_URL)
-//    val dropDown = new Select(driver.findElementByCssSelector("#navbar #nav-belt .nav-fill #nav-search .nav-searchbar .nav-left .nav-search-scope.nav-sprite #searchDropdownBox"))
-//    dropDown.selectByVisibleText("Clothing & Accessories")
-//    driver.close()
-//  }
+  "user" should "search for watches category" in {
+
+    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.desktop-searchBar")))
+
+    val search: WebElement =driver.findElementByCssSelector("input.desktop-searchBar")
+    search.sendKeys("watches")
+    driver.findElementByCssSelector("a.desktop-submit").click()
+  }
+
+  "user" should "select a watch" in {
+
+    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li.product-base a:nth-child(2)")))
+    driver.findElementByCssSelector("li.product-base a:nth-child(2)").click()
+  }
+
+  "user" should "be able to add the watch to the cart" in {
+
+    driver.findElementByCssSelector("button.pdp-add-to-bag.pdp-button").click()
+
+  }
+  "user" should "be able to verify the products added to cart" in {
+
+    driver.findElementByCssSelector("a.desktop-cart").click()
+  }
+
+  "user" should "be able to checkout" in {
+
+    driver.findElementByCssSelector("div.order-total.footer div.place-order.b-white button.btn.primary-btn.btn-continue.m-button.clickable ").click()
+    driver.findElementByCssSelector("input.pincode").sendKeys("110096")
+    driver.findElementByCssSelector("input.locality").click()
+    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.suggestions div.bd button")))
+    driver.findElementByCssSelector("div.suggestions div.bd button").click()
+    driver.findElementByCssSelector("input.name").sendKeys("Charmy Garg")
+    driver.findElementByCssSelector("textarea.address").sendKeys("Sector 36, Noida")
+    driver.findElementByCssSelector("input.mobile").sendKeys("9867574838")
+    driver.findElementByCssSelector("button.green-button.submit.clickable").click()
+
+    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.btn.primary-btn.btn-continue.green-button.clickable")))
+    driver.findElementByCssSelector("button.btn.primary-btn.btn-continue.green-button.clickable").click()
+  }
+
 }
