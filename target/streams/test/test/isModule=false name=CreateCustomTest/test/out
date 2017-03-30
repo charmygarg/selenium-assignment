@@ -4,37 +4,59 @@
 [0m[[0minfo[0m] [0m[32muser[0m[0m
 [0m[[0minfo[0m] [0m[32m- should logged[0m[0m
 [0m[[0minfo[0m] [0m[32muser[0m[0m
-[0m[[0minfo[0m] [0m[32m- should search for watches category[0m[0m
-[0m[[0minfo[0m] [0m[32muser[0m[0m
-[0m[[0minfo[0m] [0m[31m- should select a watch *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: li.product-base a:nth-child(2) (tried for 10 second(s) with 500 MILLISECONDS interval)[0m[0m
+[0m[[0minfo[0m] [0m[31m- should search for shoes category *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.openqa.selenium.NoSuchWindowException: no such window: target window already closed[0m[0m
+[0m[[0minfo[0m] [0m[31mfrom unknown error: web view not found[0m[0m
+[0m[[0minfo[0m] [0m[31m  (Session info: chrome=57.0.2987.110)[0m[0m
+[0m[[0minfo[0m] [0m[31m  (Driver info: chromedriver=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f),platform=Linux 4.4.0-21-generic x86_64) (WARNING: The server did not provide any stacktrace information)[0m[0m
+[0m[[0minfo[0m] [0m[31mCommand duration or timeout: 32 milliseconds[0m[0m
 [0m[[0minfo[0m] [0m[31mBuild info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'[0m[0m
 [0m[[0minfo[0m] [0m[31mSystem info: host: 'knodus-1550', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-21-generic', java.version: '1.8.0_92'[0m[0m
 [0m[[0minfo[0m] [0m[31mDriver info: org.openqa.selenium.chrome.ChromeDriver[0m[0m
-[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.8Ehd61}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
-[0m[[0minfo[0m] [0m[31mSession ID: de3cbd02dc0517fa3a388cf8e8b14cfc[0m[0m
+[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.TUfp2d}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
+[0m[[0minfo[0m] [0m[31mSession ID: 03d02c250c1541a24e63e302f85be28d[0m[0m
+[0m[[0minfo[0m] [0m[31m*** Element info: {Using=css selector, value=a.desktop-submit}[0m[0m
+[0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.lang.reflect.Constructor.newInstance(Constructor.java:423)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$2.apply$mcV$sp(CreateCustomTest.scala:64)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32muser[0m[0m
+[0m[[0minfo[0m] [0m[31m- should select a shoe *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: li.product-base a:nth-child(3) (tried for 10 second(s) with 500 MILLISECONDS interval)[0m[0m
+[0m[[0minfo[0m] [0m[31mBuild info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'[0m[0m
+[0m[[0minfo[0m] [0m[31mSystem info: host: 'knodus-1550', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-21-generic', java.version: '1.8.0_92'[0m[0m
+[0m[[0minfo[0m] [0m[31mDriver info: org.openqa.selenium.chrome.ChromeDriver[0m[0m
+[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.TUfp2d}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
+[0m[[0minfo[0m] [0m[31mSession ID: 03d02c250c1541a24e63e302f85be28d[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$3.apply$mcV$sp(CreateCustomTest.scala:48)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$3.apply(CreateCustomTest.scala:46)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$3.apply(CreateCustomTest.scala:46)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$3.apply$mcV$sp(CreateCustomTest.scala:69)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$3.apply(CreateCustomTest.scala:67)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$3.apply(CreateCustomTest.scala:67)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
 [0m[[0minfo[0m] [0m[31m  ...[0m[0m
-[0m[[0minfo[0m] [0m[31m  Cause: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"li.product-base a:nth-child(2)"}[0m[0m
+[0m[[0minfo[0m] [0m[31m  Cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed[0m[0m
+[0m[[0minfo[0m] [0m[31mfrom unknown error: web view not found[0m[0m
 [0m[[0minfo[0m] [0m[31m  (Session info: chrome=57.0.2987.110)[0m[0m
 [0m[[0minfo[0m] [0m[31m  (Driver info: chromedriver=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f),platform=Linux 4.4.0-21-generic x86_64) (WARNING: The server did not provide any stacktrace information)[0m[0m
-[0m[[0minfo[0m] [0m[31mCommand duration or timeout: 28 milliseconds[0m[0m
-[0m[[0minfo[0m] [0m[31mFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html[0m[0m
+[0m[[0minfo[0m] [0m[31mCommand duration or timeout: 11 milliseconds[0m[0m
 [0m[[0minfo[0m] [0m[31mBuild info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'[0m[0m
 [0m[[0minfo[0m] [0m[31mSystem info: host: 'knodus-1550', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-21-generic', java.version: '1.8.0_92'[0m[0m
 [0m[[0minfo[0m] [0m[31mDriver info: org.openqa.selenium.chrome.ChromeDriver[0m[0m
-[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.8Ehd61}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
-[0m[[0minfo[0m] [0m[31mSession ID: de3cbd02dc0517fa3a388cf8e8b14cfc[0m[0m
-[0m[[0minfo[0m] [0m[31m*** Element info: {Using=css selector, value=li.product-base a:nth-child(2)}[0m[0m
+[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.TUfp2d}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
+[0m[[0minfo[0m] [0m[31mSession ID: 03d02c250c1541a24e63e302f85be28d[0m[0m
+[0m[[0minfo[0m] [0m[31m*** Element info: {Using=css selector, value=li.product-base a:nth-child(3)}[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at java.lang.reflect.Constructor.newInstance(Constructor.java:423)[0m[0m
@@ -45,49 +67,4 @@
 [0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
-[0m[[0minfo[0m] [0m[32muser[0m[0m
-[0m[[0minfo[0m] [0m[31m- should be able to add the watch to the cart *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button.pdp-add-to-bag.pdp-button"}[0m[0m
-[0m[[0minfo[0m] [0m[31m  (Session info: chrome=57.0.2987.110)[0m[0m
-[0m[[0minfo[0m] [0m[31m  (Driver info: chromedriver=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f),platform=Linux 4.4.0-21-generic x86_64) (WARNING: The server did not provide any stacktrace information)[0m[0m
-[0m[[0minfo[0m] [0m[31mCommand duration or timeout: 28 milliseconds[0m[0m
-[0m[[0minfo[0m] [0m[31mFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html[0m[0m
-[0m[[0minfo[0m] [0m[31mBuild info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'[0m[0m
-[0m[[0minfo[0m] [0m[31mSystem info: host: 'knodus-1550', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-21-generic', java.version: '1.8.0_92'[0m[0m
-[0m[[0minfo[0m] [0m[31mDriver info: org.openqa.selenium.chrome.ChromeDriver[0m[0m
-[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.8Ehd61}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
-[0m[[0minfo[0m] [0m[31mSession ID: de3cbd02dc0517fa3a388cf8e8b14cfc[0m[0m
-[0m[[0minfo[0m] [0m[31m*** Element info: {Using=css selector, value=button.pdp-add-to-bag.pdp-button}[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at java.lang.reflect.Constructor.newInstance(Constructor.java:423)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$4.apply$mcV$sp(CreateCustomTest.scala:54)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$4.apply(CreateCustomTest.scala:54)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
-[0m[[0minfo[0m] [0m[32muser[0m[0m
-[0m[[0minfo[0m] [0m[32m- should be able to verify the products added to cart[0m[0m
-[0m[[0minfo[0m] [0m[32muser[0m[0m
-[0m[[0minfo[0m] [0m[31m- should be able to checkout *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.suggestions div.bd button (tried for 10 second(s) with 500 MILLISECONDS interval)[0m[0m
-[0m[[0minfo[0m] [0m[31mBuild info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'[0m[0m
-[0m[[0minfo[0m] [0m[31mSystem info: host: 'knodus-1550', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-21-generic', java.version: '1.8.0_92'[0m[0m
-[0m[[0minfo[0m] [0m[31mDriver info: org.openqa.selenium.chrome.ChromeDriver[0m[0m
-[0m[[0minfo[0m] [0m[31mCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455506 (18f6627e265f442aeec9b6661a49fe819aeeea1f), userDataDir=/tmp/.org.chromium.Chromium.8Ehd61}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.110, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}][0m[0m
-[0m[[0minfo[0m] [0m[31mSession ID: de3cbd02dc0517fa3a388cf8e8b14cfc[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$6.apply$mcV$sp(CreateCustomTest.scala:67)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$6.apply(CreateCustomTest.scala:62)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at CreateCustomTest$$anonfun$6.apply(CreateCustomTest.scala:62)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
 [0m[[0minfo[0m] [0m[31m  ...[0m[0m

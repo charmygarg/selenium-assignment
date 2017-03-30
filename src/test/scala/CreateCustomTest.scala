@@ -21,7 +21,20 @@ class CreateCustomTest extends FlatSpec with TestSetUp {
     }
   }
 
-  "user" should "logged " in {
+  "user" should "not logged with invalid input " in {
+
+    val dropDown = driver.findElementByCssSelector("div.desktop-user")
+    val mouseHover = new Actions(driver)
+    mouseHover.moveToElement(dropDown)
+    mouseHover.build().perform()
+
+    driver.findElementByCssSelector("div.desktop-getUserInLinks.desktop-getInLinks a:nth-child(2)").click()
+    driver.findElementByCssSelector("input.login-user-input-email.login-user-input").sendKeys(InvalidEMAIl)
+    driver.findElementByCssSelector("input.login-user-input-password.login-user-input").sendKeys(password)
+    driver.findElementByCssSelector("button.login-login-button").click()
+  }
+
+  "user" should "logged with valid input " in {
 
     val dropDown = driver.findElementByCssSelector("div.desktop-user")
     val mouseHover = new Actions(driver)
@@ -34,6 +47,7 @@ class CreateCustomTest extends FlatSpec with TestSetUp {
     driver.findElementByCssSelector("button.login-login-button").click()
   }
 
+  Thread.sleep(4000)
   "user" should "search for watches category" in {
 
     webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.desktop-searchBar")))
@@ -54,25 +68,50 @@ class CreateCustomTest extends FlatSpec with TestSetUp {
     driver.findElementByCssSelector("button.pdp-add-to-bag.pdp-button").click()
 
   }
+
+  Thread.sleep(1000)
+  "user" should "search for shoes category" in {
+
+    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.desktop-searchBar")))
+
+    val search: WebElement =driver.findElementByCssSelector("input.desktop-searchBar")
+    search.sendKeys("shoes")
+    driver.findElementByCssSelector("a.desktop-submit").click()
+  }
+
+  "user" should "select a shoe" in {
+
+    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li.product-base a:nth-child(2)")))
+    driver.findElementByCssSelector("li.product-base a:nth-child(2)").click()
+  }
+
+  "user" should "be able to add the shoe to the cart" in {
+
+    driver.findElementByCssSelector("button.size-buttons-size-button.size-buttons-size-button-default").click()
+    driver.findElementByCssSelector("button.pdp-add-to-bag.pdp-button").click()
+
+  }
+
   "user" should "be able to verify the products added to cart" in {
 
     driver.findElementByCssSelector("a.desktop-cart").click()
   }
 
+
   "user" should "be able to checkout" in {
 
-    driver.findElementByCssSelector("div.order-total.footer div.place-order.b-white button.btn.primary-btn.btn-continue.m-button.clickable ").click()
-    driver.findElementByCssSelector("input.pincode").sendKeys("110096")
+
+    driver.findElementByCssSelector("div.order-total.footer div.place-order.b-white button.btn.primary-btn.btn-continue.m-button.clickable").click()
+    driver.findElementByCssSelector("input.pincode").sendKeys("251002")
+
+    driver.findElementById("locality").click()
+    Thread.sleep(3000)
+    driver.findElementById("locality").sendKeys("Noida")
     driver.findElementByCssSelector("input.locality").click()
-    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.suggestions div.bd button")))
-    driver.findElementByCssSelector("div.suggestions div.bd button").click()
-    driver.findElementByCssSelector("input.name").sendKeys("Charmy Garg")
-    driver.findElementByCssSelector("textarea.address").sendKeys("Sector 36, Noida")
-    driver.findElementByCssSelector("input.mobile").sendKeys("9867574838")
+    driver.findElementByCssSelector("input.name").sendKeys("Charmy")
+    driver.findElementByCssSelector("textarea.address").sendKeys("Sector 36")
+    driver.findElementByCssSelector("input.mobile").sendKeys("9876535464")
+
     driver.findElementByCssSelector("button.green-button.submit.clickable").click()
-
-    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.btn.primary-btn.btn-continue.green-button.clickable")))
-    driver.findElementByCssSelector("button.btn.primary-btn.btn-continue.green-button.clickable").click()
   }
-
 }

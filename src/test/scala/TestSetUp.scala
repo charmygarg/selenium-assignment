@@ -7,6 +7,7 @@ trait TestSetUp {
 
   val BASE_URL = "http://www.myntra.com/"
   val EMAIl = "charmiigarg@gmail.com"
+  val InvalidEMAIl = "charmygarg@gmail.com"
   val password = "123456"
   System.setProperty("webdriver.chrome.driver", "/home/knodus/Documents/chromedriver")
   val capabilities = DesiredCapabilities.chrome()
